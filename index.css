@@ -1,0 +1,241 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.main-body {
+	display: flex;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8vh;
+	min-width: 70%;
+	max-width: 70%;
+}
+
+.cart-body {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8vh;
+	min-width: 70%;
+	max-width: 70%;
+}
+
+.contents {
+	padding-top: 8vh;
+}
+
+.filters {
+	position: static;
+}
+
+.tables {
+	display: flex;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8vh;
+	min-width: 70%;
+	max-width: 70%;
+}
+
+.product-container {
+	display: flex;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8vh;
+	min-width: 70%;
+	max-width: 70%;
+}
+.product-details {
+	margin-left: 15px;
+}
+
+header {
+	margin: 0;
+	font-family: Arial;
+	background-color: #123;
+	color: white;
+	min-height: 5vh;
+	padding: 10px;
+	position: fixed;
+	min-width: 100%;
+	z-index: 2;
+	top: 0;
+}
+
+form {
+	margin: 20px 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #33333300;
+	background-color: transparent;
+	border: transparent;
+}
+
+input[type='number'] {
+	width: 50px; /* Adjust width as needed */
+	padding: 5px;
+	margin-right: 10px; /* Add some spacing between the number input and submit button */
+	font-size: large;
+}
+
+input[type='submit'].tocart-btn {
+	background-color: #fc8507; /* Green background color */
+	color: #fff; /* White text color */
+	padding: 10px 15px; /* Padding for better visual appearance */
+	border: none; /* Remove default button border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Add a pointer cursor on hover */
+	font-size: medium;
+	margin-top: 10px;
+}
+
+input[type='submit'].filter-btn {
+	background-color: #fc8507; /* Green background color */
+	color: #fff; /* White text color */
+	padding: 10px 15px; /* Padding for better visual appearance */
+	border: none; /* Remove default button border */
+	border-radius: 5px; /* Rounded corners */
+	cursor: pointer; /* Add a pointer cursor on hover */
+	font-size: medium;
+	margin-top: 10px;
+}
+
+input[type='submit'].tocart-btn:hover {
+	color: #ffa218;
+}
+
+table {
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background-color: #123;
+	color: #ffffff;
+}
+
+th a {
+	text-align: center;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+th a:hover {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	background-color: #6e6e6e;
+}
+
+td.price {
+	font-size: large;
+	color: rgb(0, 0, 0);
+}
+
+.a-first-td {
+	text-align: center;
+	color: rgb(236, 236, 236);
+	text-decoration: none;
+}
+
+.a-first-td:hover {
+	color: rgb(236, 236, 236);
+	text-decoration: none;
+	background-color: #6e6e6e;
+}
+
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+a {
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	text-decoration: none;
+	color: #000000;
+	border-radius: 5px;
+}
+
+a:hover {
+	background-color: #eee;
+}
+
+.user-menu {
+	position: relative;
+	float: right;
+}
+
+.dropbtn {
+	background-color: rgb(106, 106, 106);
+	color: rgb(0, 0, 0);
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	min-width: 160px;
+}
+
+.dropdown {
+	position: relative;
+	float: right;
+	min-width: 160px;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content-login {
+	display: contents;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: rgb(169, 169, 169);
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 160px;
+	justify-content: space-between;
+}
